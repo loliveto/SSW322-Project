@@ -6,6 +6,7 @@ import java.util.Scanner;
 public abstract class Question {
 
 	public String questionPrompt = new  String();
+	boolean hasCorrectBeenSet = false;
 	public abstract void setOption();
 	public abstract String getOption();
 	

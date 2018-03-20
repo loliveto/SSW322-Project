@@ -52,20 +52,19 @@ public class Driver {
 								q = new MultipleChoice();
 								String qcont = "y";
 								q.setPrompt();
-								boolean hasCorrectBeenSet = false;
+								q.hasCorrectBeenSet = false;
 								while(qcont.equals("y")){
 									q.setOption();
 									if(test.isATest==true){
 										String qcont1 = "y";
-										System.out.println("Is this the correct answer? (y/n)");
-										Scanner scan = new Scanner(System.in);
-										qcont1 = scan.nextLine();
-										if(qcont1.equals("y") && !hasCorrectBeenSet){
-											answerSheet.addCorrectAnswer(q.getOption());
-											hasCorrectBeenSet=true;
-										}
-										else if(qcont1.equals("y") && hasCorrectBeenSet){
-											System.out.println("Correct answer has already been set.");
+										if(!q.hasCorrectBeenSet){
+											System.out.println("Is this the correct answer? (y/n)");
+											Scanner scan = new Scanner(System.in);
+											qcont1 = scan.nextLine();
+											if(qcont1.equals("y")){
+												answerSheet.addCorrectAnswer(q.getOption());
+												q.hasCorrectBeenSet=true;
+											}
 										}
 									}
 									System.out.println("Would you like to add another option?(y/n)");
