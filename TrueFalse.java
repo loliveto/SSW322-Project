@@ -20,5 +20,11 @@ public class TrueFalse extends Question{
 		
 		
 	}
+
+	@Override
+	public String getOption() {
+		// TODO Auto-generated method stub
+		return null;
+	}
  
 }

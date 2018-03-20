@@ -22,6 +22,8 @@ public class Driver {
 					//code to create test
 					Questionaire test = new Questionaire();
 					questionnaireList.add(test);
+					AnswerSheet answerSheet = new AnswerSheet(1);
+					answerSheetList.add(answerSheet);
 					
 					//name test
 					System.out.println("What would you like to name your test?");
@@ -50,8 +52,22 @@ public class Driver {
 								q = new MultipleChoice();
 								String qcont = "y";
 								q.setPrompt();
+								boolean hasCorrectBeenSet = false;
 								while(qcont.equals("y")){
 									q.setOption();
+									if(test.isATest==true){
+										String qcont1 = "y";
+										System.out.println("Is this the correct answer? (y/n)");
+										Scanner scan = new Scanner(System.in);
+										qcont1 = scan.nextLine();
+										if(qcont1.equals("y") && !hasCorrectBeenSet){
+											answerSheet.addCorrectAnswer(q.getOption());
+											hasCorrectBeenSet=true;
+										}
+										else if(qcont1.equals("y") && hasCorrectBeenSet){
+											System.out.println("Correct answer has already been set.");
+										}
+									}
 									System.out.println("Would you like to add another option?(y/n)");
 									Scanner scan = new Scanner(System.in);
 									qcont = scan.nextLine();

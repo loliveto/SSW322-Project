@@ -7,7 +7,7 @@ public class Ranking extends Question {
 
 	ArrayList<String[]> options = new ArrayList<String[]>();
 	
-	String rank;;
+	String rank;
 	
 	String questionPrompt = new String();
 	
@@ -34,6 +34,12 @@ public class Ranking extends Question {
 		
 		this.options.add(pair);
 
+	}
+
+	@Override
+	public String getOption() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

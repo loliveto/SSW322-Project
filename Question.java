@@ -7,6 +7,7 @@ public abstract class Question {
 
 	public String questionPrompt = new  String();
 	public abstract void setOption();
+	public abstract String getOption();
 	
 	//Gets the options
 	public String getPrompt(){

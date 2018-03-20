@@ -32,5 +32,11 @@ public class Matching extends Question{
 		this.options.add(pair);
 	}
 
+	@Override
+	public String getOption() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
 //

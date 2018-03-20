@@ -15,8 +15,8 @@ public class MultipleChoice extends Question{
 	}
 
 	//Gets the options
-	public ArrayList<String> getOptions(){
-		return options;
+	public String getOption(){
+		return options.get(options.size()-1);
 	}
 	
 	//Sets the options
@@ -25,6 +25,9 @@ public class MultipleChoice extends Question{
 		Scanner contInput = new Scanner(System.in);
 		String s = contInput.nextLine();
 		this.options.add(s);
+//		if(isATest == true){
+//			
+//		}
 	}
 	
 	
