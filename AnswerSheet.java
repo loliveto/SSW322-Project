@@ -7,11 +7,11 @@ public class AnswerSheet {
 
 	public ArrayList<String> correctAnswers = new ArrayList<String>();
 	public HashMap<Integer, ArrayList<String>> userAnswers = new  HashMap<Integer, ArrayList<String>>();
-	public Questionaire questionaire = new Questionaire();
+	//public Questionaire questionaire = new Questionaire();
 	public int id;
 	
-	public AnswerSheet(Questionaire questionaire, int id) {
-		this.questionaire = questionaire;
+	public AnswerSheet(int id) {
+		//this.questionaire = questionaire;
 		this.id = id;
 	}
 	

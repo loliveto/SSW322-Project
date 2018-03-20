@@ -6,6 +6,7 @@ public class Questionaire {
 	
 	boolean isATest;
 	ArrayList<Question> questionsList;
+	AnswerSheet ansSheet;
 	int id;
 	String name;
 	
