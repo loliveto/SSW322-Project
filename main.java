@@ -49,12 +49,14 @@ public class Driver {
 							case 1:
 								q = new MultipleChoice();
 								String qcont = "y";
+								q.setPrompt();
 								while(qcont.equals("y")){
 									q.setOption();
-									System.out.println("Would you like to add another question?(y/n)");
+									System.out.println("Would you like to add another option?(y/n)");
 									Scanner scan = new Scanner(System.in);
-									qcont = nameInput.nextLine();
+									qcont = scan.nextLine();
 								}
+
 								break;
 								
 							case 2:
@@ -77,9 +79,8 @@ public class Driver {
 								q = new Matching();
 								break;
 						}
-						
 						//adds question to questionlist
-						test.questionsList.add(q);
+						test.addQuestion(q);
 						
 						System.out.println("Would you like to add another question? (y/n)");
 						Scanner contInput = new Scanner(System.in);
@@ -100,7 +101,13 @@ public class Driver {
 					//code to view test/survey
 					//list all 
 					break;
+					
+				default:
+					break;
+				//end of switch
 			}
+			
+			//end of while
 		}		
 		
 	}

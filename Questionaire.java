@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Questionaire {
 	
 	boolean isATest;
-	ArrayList<Question> questionsList;
+	ArrayList<Question> questionsList = new ArrayList<Question>();
 	AnswerSheet ansSheet;
 	int id;
 	String name;

@@ -16,8 +16,8 @@ public abstract class Question {
 	//Sets the options
 	public void setPrompt(){
 		System.out.println("What would you like your question to be?");
-		Scanner contInput = new Scanner(System.in);
-		String s = contInput.nextLine();
+		Scanner question = new Scanner(System.in);
+		String s = question.nextLine();
 		this.questionPrompt = s;
 	}
 	
