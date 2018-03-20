@@ -1,6 +1,11 @@
 package M2;
 
-public class Questionaire {
+import java.util.ArrayList;
 
+public class Questionaire {
+	boolean isATest;
+	ArrayList<Question> questionsList;
+	int id;
+	String name;
 }
 

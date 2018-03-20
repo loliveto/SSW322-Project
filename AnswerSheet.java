@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 public class AnswerSheet {
 	
+<<<<<<< HEAD
 	public ArrayList<String> correctAnswers = new ArrayList<String>();
 	public HashMap<Integer, ArrayList<String>> userAnswers = new  HashMap<Integer, ArrayList<String>>();
 	public Questionaire questionaire = new Questionaire();
@@ -61,4 +62,6 @@ public class AnswerSheet {
 	
 	
 	
+=======
+>>>>>>> 709134936a0cb34af3a70d978f339cad5cb6dd44
 }
