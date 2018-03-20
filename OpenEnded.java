@@ -1,5 +1,5 @@
 package M2;
 
-public class OpenEnded {
+public class OpenEnded extends Question{
 
 }

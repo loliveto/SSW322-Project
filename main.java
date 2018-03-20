@@ -34,10 +34,45 @@ public class Driver {
 					//ask type of question (keep asking until done)
 					System.out.println("Now you can add questions to your test.");
 					String cont = "y";
+					
+					//adding questions
 					while(cont.equals("y")){
 						System.out.println("\nWhat type of question would you like to use?");
 						System.out.println("Press 1 for Multiple Choice\nPress 2 for True/False\nPress 3 for Short Answer\nPress 4 for Essay Question\nPress 5 for Ranking\nPress 6 for Matching");
+						Scanner qInput = new Scanner(System.in);
+						int qChoice;
+						qChoice = Integer.parseInt(qInput.nextLine());
+						Question q = new Question();
 						
+						//creates question
+						switch(qChoice){
+							case 1:
+								q = new MultipleChoice();
+								break;
+								
+							case 2:
+								q = new TrueFalse();
+								break;
+								
+							case 3:
+								q = new OpenEnded();
+								break;
+								
+							case 4:
+								q = new OpenEnded();
+								break;
+								
+							case 5:
+								q = new Ranking();
+								break;
+								
+							case 6:
+								q = new Matching();
+								break;
+						}
+						
+						//adds question to questionlist
+						test.questionsList.add(q);
 						
 						System.out.println("Would you like to add another question? (y/n)");
 						Scanner contInput = new Scanner(System.in);
@@ -46,11 +81,14 @@ public class Driver {
 					
 					//add it to questionlist
 					break;
+					
 				case 2:
 					//code to create Survey
 					break;
+					
 				case 3:
 					break;
+					
 				case 4:
 					//code to view test/survey
 					//list all 

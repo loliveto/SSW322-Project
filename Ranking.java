@@ -1,6 +1,6 @@
 package M2;
 
-public class Ranking {
+public class Ranking extends Question {
 
 }
 

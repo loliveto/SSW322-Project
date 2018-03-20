@@ -2,7 +2,7 @@ package M2;
 
 import java.util.ArrayList;
 
-public class TrueFalse {
+public class TrueFalse extends Question{
 
 	public ArrayList<String> options = new ArrayList<String>();
 	

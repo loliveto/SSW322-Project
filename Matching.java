@@ -1,6 +1,6 @@
 package M2;
 
-public class Matching {
+public class Matching extends Question{
 
 }
 //
