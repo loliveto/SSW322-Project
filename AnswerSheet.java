@@ -19,7 +19,7 @@ public class AnswerSheet {
 		correctAnswers.add(answer);
 	}
 	
-	public void addUserAnswer(Integer id, String answer) {
+	public void addUserAnswer(Integer uId, String answer) {
 		ArrayList<String> ans = new ArrayList<String>();
 		if(userAnswers.containsKey(id)) {
 			ans = userAnswers.get(id);
