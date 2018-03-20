@@ -56,7 +56,6 @@ public class Driver {
 									Scanner scan = new Scanner(System.in);
 									qcont = scan.nextLine();
 								}
-
 								break;
 								
 							case 2:
