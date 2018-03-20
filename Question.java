@@ -1,5 +1,5 @@
 package M2;
 
-public class Question {
+public abstract class Question {
 
 }

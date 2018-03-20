@@ -42,7 +42,7 @@ public class Driver {
 						Scanner qInput = new Scanner(System.in);
 						int qChoice;
 						qChoice = Integer.parseInt(qInput.nextLine());
-						Question q = new Question();
+						Question q =  null;
 						
 						//creates question
 						switch(qChoice){
@@ -55,11 +55,11 @@ public class Driver {
 								break;
 								
 							case 3:
-								q = new OpenEnded();
+								q = new OpenEnded("s");
 								break;
 								
 							case 4:
-								q = new OpenEnded();
+								q = new OpenEnded("l");
 								break;
 								
 							case 5:
