@@ -38,5 +38,11 @@ public class Matching extends Question{
 		return null;
 	}
 
+	@Override
+	public ArrayList<String[]> getAllOptions() {
+		// TODO Auto-generated method stub
+		return options;
+	}
+
 }
 //

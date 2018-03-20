@@ -1,5 +1,7 @@
 package M2;
 
+import java.util.ArrayList;
+
 public class OpenEnded extends Question{
 
 	int charLimit;
@@ -24,6 +26,12 @@ public class OpenEnded extends Question{
 
 	@Override
 	public String getOption() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<String> getAllOptions() {
 		// TODO Auto-generated method stub
 		return null;
 	}

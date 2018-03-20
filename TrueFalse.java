@@ -19,5 +19,11 @@ public class TrueFalse extends Question{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public ArrayList<String> getAllOptions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
  
 }

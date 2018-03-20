@@ -90,14 +90,32 @@ public class Driver {
 								
 							case 3:
 								q = new OpenEnded("s");
+								q.setPrompt();
+								answerSheet.addCorrectAnswer("");
 								break;
 								
 							case 4:
 								q = new OpenEnded("l");
+								q.setPrompt();
+								answerSheet.addCorrectAnswer("");
 								break;
 								
 							case 5:
 								q = new Ranking();
+								String qcontR = "y";
+								q.setPrompt();
+								while(qcontR.equals("y"))
+									q.setOption();
+									if(test.isATest==true){
+										String qcont1 = "y";
+										answerSheet.addCorrectAnswer(q.getAllOptions());
+										q.hasCorrectBeenSet=true;
+										}
+									}
+									System.out.println("Would you like to add another option?(y/n)");
+									Scanner scan = new Scanner(System.in);
+									qcont = scan.nextLine();
+								}
 								break;
 								
 							case 6:

@@ -30,6 +30,10 @@ public class MultipleChoice extends Question{
 //		}
 	}
 	
+	public ArrayList<String> getAllOptions(){
+		return options;
+	}
+	
 	
 	
 }

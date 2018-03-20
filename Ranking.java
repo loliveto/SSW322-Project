@@ -15,6 +15,7 @@ public class Ranking extends Question {
 		return options;
 	}
 	
+	
 	@Override
 	public void setOption() {
 		// TODO Auto-generated method stub
@@ -38,6 +39,13 @@ public class Ranking extends Question {
 
 	@Override
 	public String getOption() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public ArrayList<String> getAllOptions() {
 		// TODO Auto-generated method stub
 		return null;
 	}
