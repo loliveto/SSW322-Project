@@ -75,6 +75,17 @@ public class Driver {
 								
 							case 2:
 								q = new TrueFalse();
+								q.setPrompt();
+								q.setOption();
+								System.out.println("Is the answer true(t) or false(f)?");
+								String tf = "";
+								Scanner scan = new Scanner(System.in);
+								tf = scan.nextLine();
+								if(tf.equals("t")){
+									answerSheet.addCorrectAnswer("True");
+								}else if(tf.equals("f")){
+									answerSheet.addCorrectAnswer("False");
+								}
 								break;
 								
 							case 3:
