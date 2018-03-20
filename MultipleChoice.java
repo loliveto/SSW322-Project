@@ -1,6 +1,7 @@
 package M2;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MultipleChoice extends Question{
 	
@@ -19,7 +20,10 @@ public class MultipleChoice extends Question{
 	}
 	
 	//Sets the options
-	public void setOption(String s){
+	public void setOption(){
+		System.out.println("What would you like your option to be?");
+		Scanner contInput = new Scanner(System.in);
+		String s = contInput.nextLine();
 		options.add(s);
 	}
 	

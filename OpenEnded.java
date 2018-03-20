@@ -15,4 +15,10 @@ public class OpenEnded extends Question{
 			charLimit = 250;
 		}
 	}
+
+	@Override
+	public void setOption() {
+		// TODO Auto-generated method stub
+		
+	}
 }

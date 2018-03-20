@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public abstract class Question {
 
 	public String questionPrompt = new  String();
+	public abstract void setOption();
 	
 	//Gets the options
 	public String getPrompt(){

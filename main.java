@@ -48,6 +48,10 @@ public class Driver {
 						switch(qChoice){
 							case 1:
 								q = new MultipleChoice();
+								String qcont = "y";
+								while(qcont.equals("y")){
+									q.setOption();
+								}
 								break;
 								
 							case 2:

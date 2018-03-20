@@ -13,5 +13,11 @@ public class TrueFalse extends Question{
 		options.add("True");
 		options.add("False");
 	}
+
+	@Override
+	public void setOption() {
+		// TODO Auto-generated method stub
+		
+	}
  
 }
