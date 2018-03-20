@@ -55,11 +55,11 @@ public class Driver {
 								break;
 								
 							case 3:
-								q = new OpenEnded();
+								q = new OpenEnded("short");
 								break;
 								
 							case 4:
-								q = new OpenEnded();
+								q = new OpenEnded("long");
 								break;
 								
 							case 5:
