@@ -51,6 +51,9 @@ public class Driver {
 								String qcont = "y";
 								while(qcont.equals("y")){
 									q.setOption();
+									System.out.println("Would you like to add another question?(y/n)");
+									Scanner scan = new Scanner(System.in);
+									qcont = nameInput.nextLine();
 								}
 								break;
 								

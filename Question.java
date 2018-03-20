@@ -1,6 +1,7 @@
 package M2;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public abstract class Question {
 
@@ -13,7 +14,10 @@ public abstract class Question {
 	}
 		
 	//Sets the options
-	public void setPrompt(String s){
+	public void setPrompt(){
+		System.out.println("What would you like your question to be?");
+		Scanner contInput = new Scanner(System.in);
+		String s = contInput.nextLine();
 		this.questionPrompt = s;
 	}
 	

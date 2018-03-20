@@ -24,7 +24,7 @@ public class MultipleChoice extends Question{
 		System.out.println("What would you like your option to be?");
 		Scanner contInput = new Scanner(System.in);
 		String s = contInput.nextLine();
-		options.add(s);
+		this.options.add(s);
 	}
 	
 	
