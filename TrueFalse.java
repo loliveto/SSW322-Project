@@ -18,6 +18,7 @@ public class TrueFalse extends Question{
 	public void setOption() {
 		// TODO Auto-generated method stub
 		
+		
 	}
  
 }

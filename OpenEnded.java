@@ -6,6 +6,7 @@ public class OpenEnded extends Question{
 	
 	String questionPrompt = new String();
 	
+	
 	//Initializes the Open Ended question and sets character limit
 	public OpenEnded(String s){
 		if(s.equals("long")){
@@ -18,7 +19,6 @@ public class OpenEnded extends Question{
 
 	@Override
 	public void setOption() {
-		// TODO Auto-generated method stub
 		
 	}
 }
