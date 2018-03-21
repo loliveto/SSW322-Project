@@ -113,12 +113,25 @@ public class Driver {
 									}
 									System.out.println("Would you like to add another option?(y/n)");
 									Scanner scan1 = new Scanner(System.in);
-									qcont = scan1.nextLine();
+									qcontR = scan1.nextLine();
 								}
 								break;
 								
 							case 6:
 								q = new Matching();
+								String qcontM = "y";
+								q.setPrompt();
+								while(qcontM.equals("y")){
+									q.setOption();
+									if(test.isATest==true){
+										String qcont1 = "y";
+										answerSheet.addCorrectAnswer("");
+										q.hasCorrectBeenSet=true;
+									}
+									System.out.println("Would you like to add another option?(y/n)");
+									Scanner scan1 = new Scanner(System.in);
+									qcontM = scan1.nextLine();
+								}
 								break;
 						}
 						//adds question to questionlist
@@ -148,6 +161,7 @@ public class Driver {
 					break;
 				//end of switch
 			}
+			//print out the test/survey
 			
 			//end of while
 		}		
