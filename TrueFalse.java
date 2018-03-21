@@ -21,7 +21,7 @@ public class TrueFalse extends Question{
 	}
 
 	@Override
-	public ArrayList<String> getAllOptions() {
+	public ArrayList<Object> getAllOptions() {
 		// TODO Auto-generated method stub
 		return null;
 	}

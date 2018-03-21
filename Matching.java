@@ -39,9 +39,9 @@ public class Matching extends Question{
 	}
 
 	@Override
-	public ArrayList<String[]> getAllOptions() {
+	public ArrayList<Object> getAllOptions() {
 		// TODO Auto-generated method stub
-		return options;
+		return null;
 	}
 
 }

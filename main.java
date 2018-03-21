@@ -104,17 +104,16 @@ public class Driver {
 								q = new Ranking();
 								String qcontR = "y";
 								q.setPrompt();
-								while(qcontR.equals("y"))
+								while(qcontR.equals("y")){
 									q.setOption();
 									if(test.isATest==true){
 										String qcont1 = "y";
-										answerSheet.addCorrectAnswer(q.getAllOptions());
+										answerSheet.addCorrectAnswer("");
 										q.hasCorrectBeenSet=true;
-										}
 									}
 									System.out.println("Would you like to add another option?(y/n)");
-									Scanner scan = new Scanner(System.in);
-									qcont = scan.nextLine();
+									Scanner scan1 = new Scanner(System.in);
+									qcont = scan1.nextLine();
 								}
 								break;
 								
