@@ -29,9 +29,11 @@ public class MultipleChoice extends Question{
 //			
 //		}
 	}
-	
-	public ArrayList<String> getAllOptions(){
-		return options;
+
+	@Override
+	public ArrayList<Object> getAllOptions() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
