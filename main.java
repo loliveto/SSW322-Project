@@ -143,7 +143,6 @@ public class Driver {
 					}
 					
 					ArrayList<Question> output = test.getQuestionsList();
-					System.out.println("no output");
 					for(Question qs: output) {
 						System.out.println(qs.getPrompt());
 						//ArrayList<String> opts= qs.getAllOptions();
@@ -244,10 +243,10 @@ public class Driver {
 					
 					//add it to questionlist  [happens up ^^ there I think-Nicole]
 					ArrayList<Question> outputS = survey.getQuestionsList();
-					System.out.println("no output");
 					for(Question qs: outputS) {
-						
-						System.out.println(qs);
+						System.out.println(qs.getPrompt());
+						//ArrayList<String> opts= qs.getAllOptions();
+						qs.getAllOptions();
 					}
 					break;
 					
