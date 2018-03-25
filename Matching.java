@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class Matching extends Question{
 
-	ArrayList<String[]> options = new ArrayList<String[]>();
+	ArrayList<String> options = new ArrayList<String>();
 	
 	String questionPrompt = new String();
 	
-	public ArrayList<String[]> getOptions(){
+	public ArrayList<String> getOptions(){
 		return options;
 	}
 	
@@ -24,11 +24,8 @@ public class Matching extends Question{
 		Scanner contInput2 = new Scanner(System.in);
 		String s2 = contInput.nextLine();
 		
-		String[] pair = new String[2];
-		
-		pair[0] = s;
-		pair[1] = s2;
-		
+		String pair = s + "\t" + s2;
+				
 		this.options.add(pair);
 	}
 
@@ -39,9 +36,9 @@ public class Matching extends Question{
 	}
 
 	@Override
-	public ArrayList<Object> getAllOptions() {
+	public ArrayList<String> getAllOptions() {
 		// TODO Auto-generated method stub
-		return null;
+		return options;
 	}
 
 }

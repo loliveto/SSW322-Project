@@ -9,8 +9,8 @@ public class Driver {
 		ArrayList<Questionaire> questionnaireList = new ArrayList<Questionaire>();
 		ArrayList<AnswerSheet> answerSheetList = new ArrayList<AnswerSheet>();
 		
-		System.out.println("The Questionnaire CLAN Presents:");
-		System.out.println("Creat a Test or Survey!");
+		System.out.println("The Questionnaire CLAN Presents: \n");
+		System.out.println("Creat a Test or Survey! \n");
 		while(true){
 			System.out.println("Press 1 to Create a Test\nPress 2 to Create a Survey\nPress 3 to Take a Test\nPress 4 to View Your Tests/Surveys\nPress 0 to quit");
 			
@@ -142,6 +142,12 @@ public class Driver {
 						cont = contInput.nextLine();
 					}
 					
+					ArrayList<Question> output = test.getQuestionsList();
+					System.out.println("no output");
+					for(Question qs: output) {
+						
+						System.out.println(qs.getOption());
+					}
 					//add it to questionlist
 					break;
 					
@@ -231,10 +237,16 @@ public class Driver {
 						
 						System.out.println("Would you like to add another question? (y/n)");
 						Scanner contInput = new Scanner(System.in);
-						cont = contInput.nextLine();
+						contS = contInput.nextLine();
 					}
 					
 					//add it to questionlist  [happens up ^^ there I think-Nicole]
+					ArrayList<Question> outputS = survey.getQuestionsList();
+					System.out.println("no output");
+					for(Question qs: outputS) {
+						
+						System.out.println(qs);
+					}
 					break;
 					
 				case 3:
