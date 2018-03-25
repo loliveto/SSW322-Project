@@ -31,9 +31,9 @@ public class MultipleChoice extends Question{
 	}
 
 	@Override
-	public ArrayList<Object> getAllOptions() {
+	public ArrayList<String> getAllOptions() {
 		// TODO Auto-generated method stub
-		return null;
+		return options;
 	}
 	
 	
