@@ -9,7 +9,7 @@ public abstract class Question {
 	boolean hasCorrectBeenSet = false;
 	public abstract void setOption();
 	public abstract String getOption();
-	public abstract ArrayList<Object> getAllOptions();
+	public abstract ArrayList<String> getAllOptions();
 	
 	//Gets the options
 	public String getPrompt(){
