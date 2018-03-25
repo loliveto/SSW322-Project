@@ -13,7 +13,7 @@ public class Questionaire {
 	public Questionaire(){
 		
 	}
-	
+
 	public void setIsATest(boolean isATest) {
 		this.isATest = isATest;
 	}
