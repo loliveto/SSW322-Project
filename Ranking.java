@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Ranking extends Question {
 
-	ArrayList<String[]> options = new ArrayList<String[]>();
+	ArrayList<String> options = new ArrayList<String>();
 	
 	String rank;
 	
@@ -28,10 +28,12 @@ public class Ranking extends Question {
 		Scanner contInput2 = new Scanner(System.in);
 		rank = contInput.nextLine();
 		
-		String[] pair = new String[2];
+//		String[] pair = new String[2];
+//		
+//		pair[0] = s;
+//		pair[1] = rank;
 		
-		pair[0] = s;
-		pair[1] = rank;
+		String pair = s + "\t" + rank;
 		
 		this.options.add(pair);
 
