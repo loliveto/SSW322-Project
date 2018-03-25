@@ -145,8 +145,10 @@ public class Driver {
 					ArrayList<Question> output = test.getQuestionsList();
 					System.out.println("no output");
 					for(Question qs: output) {
+						System.out.println(qs.getPrompt());
+						//ArrayList<String> opts= qs.getAllOptions();
+						qs.getAllOptions();
 						
-						System.out.println(qs.getOption());
 					}
 					//add it to questionlist
 					break;
