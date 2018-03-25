@@ -9,10 +9,6 @@ public class Matching extends Question{
 	
 	String questionPrompt = new String();
 	
-	public ArrayList<String> getOptions(){
-		return options;
-	}
-	
 	@Override
 	public void setOption() {
 		// TODO Auto-generated method stub
@@ -36,9 +32,11 @@ public class Matching extends Question{
 	}
 
 	@Override
-	public ArrayList<String> getAllOptions() {
+	public void getAllOptions() {
 		// TODO Auto-generated method stub
-		return options;
+		for(String op: options) {
+			System.out.println("/t" + op);
+		}
 	}
 
 }

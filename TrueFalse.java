@@ -21,9 +21,11 @@ public class TrueFalse extends Question{
 	}
 
 	@Override
-	public ArrayList<String> getAllOptions() {
+	public void getAllOptions() {
 		// TODO Auto-generated method stub
-		return options;
+		for(String op: options) {
+			System.out.println("/t" + op);
+		}
 	}
  
 }
