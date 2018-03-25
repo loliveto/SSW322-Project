@@ -11,9 +11,9 @@ public class Ranking extends Question {
 	
 	String questionPrompt = new String();
 	
-	public ArrayList<String[]> getOptions(){
-		return options;
-	}
+//	public ArrayList<String[]> getOptions(){
+//		return options;
+//	}
 	
 	
 	@Override
@@ -45,9 +45,11 @@ public class Ranking extends Question {
 
 
 	@Override
-	public ArrayList<Object> getAllOptions() {
+	public void getAllOptions() {
 		// TODO Auto-generated method stub
-		return null;
+		for(int i=0; i<options.size(); i++){
+			System.out.println(options.get(i));
+		}
 	}
 
 }
