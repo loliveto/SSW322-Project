@@ -31,8 +31,7 @@ public class OpenEnded extends Question{
 	}
 
 	@Override
-	public ArrayList<String> getAllOptions() {
+	public void getAllOptions() {
 		// TODO Auto-generated method stub
-		return null;
 	}
 }
