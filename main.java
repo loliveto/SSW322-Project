@@ -149,6 +149,7 @@ public class Driver {
 						System.out.println(qNum + ") " + qs.getPrompt());
 						//ArrayList<String> opts= qs.getAllOptions();
 						qs.getAllOptions();
+						qNum++;
 						
 					}
 					//add it to questionlist
@@ -251,6 +252,7 @@ public class Driver {
 						System.out.println(qNumS + ") " + qs.getPrompt());
 						//ArrayList<String> opts= qs.getAllOptions();
 						qs.getAllOptions();
+						qNumS++;
 					}
 					break;
 					
