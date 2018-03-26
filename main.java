@@ -144,8 +144,9 @@ public class Driver {
 					
 					ArrayList<Question> output = test.getQuestionsList();
 					System.out.println(test.getName());
+					int qNum = 1;
 					for(Question qs: output) {
-						System.out.println(qs.getPrompt());
+						System.out.println(qNum + ") " + qs.getPrompt());
 						//ArrayList<String> opts= qs.getAllOptions();
 						qs.getAllOptions();
 						
@@ -245,8 +246,9 @@ public class Driver {
 					//add it to questionlist  [happens up ^^ there I think-Nicole]
 					ArrayList<Question> outputS = survey.getQuestionsList();
 					System.out.println(survey.getName());
+					int qNumS = 1;
 					for(Question qs: outputS) {
-						System.out.println(qs.getPrompt());
+						System.out.println(qNumS + ") " + qs.getPrompt());
 						//ArrayList<String> opts= qs.getAllOptions();
 						qs.getAllOptions();
 					}

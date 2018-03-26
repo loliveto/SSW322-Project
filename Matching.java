@@ -35,7 +35,7 @@ public class Matching extends Question{
 	public void getAllOptions() {
 		// TODO Auto-generated method stub
 		for(String op: options) {
-			System.out.println("/t" + op);
+			System.out.println("\t" + op);
 		}
 	}
 

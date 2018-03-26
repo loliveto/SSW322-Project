@@ -49,8 +49,8 @@ public class Ranking extends Question {
 	@Override
 	public void getAllOptions() {
 		// TODO Auto-generated method stub
-		for(int i=0; i<options.size(); i++){
-			System.out.println(options.get(i));
+		for(String op: options) {
+			System.out.println("\t" + op);
 		}
 	}
 
