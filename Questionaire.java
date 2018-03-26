@@ -6,7 +6,7 @@ public class Questionaire {
 	
 	boolean isATest;
 	ArrayList<Question> questionsList = new ArrayList<Question>();
-	AnswerSheet ansSheet;
+	AnswerSheet ansSheet = new AnswerSheet();
 	int id;
 	String name;
 	
@@ -54,7 +54,13 @@ public class Questionaire {
 		//todo
 	}
 	
+	public void addAnswer(String ans) {
+		ansSheet.addCorrectAnswer(ans);
+	}
 	
+	public AnswerSheet getAnswerSheet() {
+		return ansSheet;
+	}
 	
 	
 	

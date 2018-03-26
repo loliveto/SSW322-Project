@@ -7,7 +7,7 @@ public class Driver {
 	public static void main(String[] args){
 		int menuChoice = -1;
 		ArrayList<Questionaire> questionnaireList = new ArrayList<Questionaire>();
-		ArrayList<AnswerSheet> answerSheetList = new ArrayList<AnswerSheet>();
+		//ArrayList<AnswerSheet> answerSheetList = new ArrayList<AnswerSheet>();
 		
 		System.out.println("The Questionnaire CLAN Presents: \n");
 		System.out.println("Creat a Test or Survey! \n");
@@ -22,8 +22,8 @@ public class Driver {
 					//code to create test
 					Questionaire test = new Questionaire();
 					questionnaireList.add(test);
-					AnswerSheet answerSheet = new AnswerSheet(1);
-					answerSheetList.add(answerSheet);
+					//AnswerSheet answerSheet = new AnswerSheet(1);
+					//answerSheetList.add(answerSheet);
 					
 					//name test
 					System.out.println("What would you like to name your test?");
@@ -62,7 +62,7 @@ public class Driver {
 											Scanner scan = new Scanner(System.in);
 											qcont1 = scan.nextLine();
 											if(qcont1.equals("y")){
-												answerSheet.addCorrectAnswer(q.getOption());
+												test.addAnswer(q.getOption());
 												q.hasCorrectBeenSet=true;
 											}
 										}
@@ -82,22 +82,22 @@ public class Driver {
 								Scanner scan = new Scanner(System.in);
 								tf = scan.nextLine();
 								if(tf.equals("t")){
-									answerSheet.addCorrectAnswer("True");
+									test.addAnswer("True");
 								}else if(tf.equals("f")){
-									answerSheet.addCorrectAnswer("False");
+									test.addAnswer("False");
 								}
 								break;
 								
 							case 3:
 								q = new OpenEnded("s");
 								q.setPrompt();
-								answerSheet.addCorrectAnswer("");
+								test.addAnswer("");
 								break;
 								
 							case 4:
 								q = new OpenEnded("l");
 								q.setPrompt();
-								answerSheet.addCorrectAnswer("");
+								test.addAnswer("");
 								break;
 								
 							case 5:
@@ -108,7 +108,7 @@ public class Driver {
 									q.setOption();
 									if(test.isATest==true){
 										String qcont1 = "y";
-										answerSheet.addCorrectAnswer("");
+										test.addAnswer("");
 										q.hasCorrectBeenSet=true;
 									}
 									System.out.println("Would you like to add another option?(y/n)");
@@ -125,7 +125,7 @@ public class Driver {
 									q.setOption();
 									if(test.isATest==true){
 										String qcont1 = "y";
-										answerSheet.addCorrectAnswer("");
+										test.addAnswer("");
 										q.hasCorrectBeenSet=true;
 									}
 									System.out.println("Would you like to add another option?(y/n)");
@@ -143,12 +143,15 @@ public class Driver {
 					}
 					
 					ArrayList<Question> output = test.getQuestionsList();
+					
 					System.out.println(test.getName());
 					int qNum = 1;
+					ArrayList<String> as = test.getAnswerSheet().getCorrectAnswers();
 					for(Question qs: output) {
 						System.out.println(qNum + ") " + qs.getPrompt());
 						//ArrayList<String> opts= qs.getAllOptions();
 						qs.getAllOptions();
+						System.out.println("Correct Answer: " + as.get(qNum-1));
 						qNum++;
 						
 					}
@@ -170,7 +173,7 @@ public class Driver {
 					survey.isATest = false;
 					
 					//ask type of question (keep asking until done)
-					System.out.println("Now you can add questions to your test.");
+					System.out.println("Now you can add questions to your survey.");
 					String contS = "y";
 					
 					//adding questions

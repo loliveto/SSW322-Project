@@ -10,9 +10,9 @@ public class AnswerSheet {
 	//public Questionaire questionaire = new Questionaire();
 	public int id;
 	
-	public AnswerSheet(int id) {
+	public AnswerSheet() {
 		//this.questionaire = questionaire;
-		this.id = id;
+		//this.id = id;
 	}
 	
 	public void addCorrectAnswer(String answer) {
