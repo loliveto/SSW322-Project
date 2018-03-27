@@ -13,7 +13,6 @@ public class Ranking extends Question {
 	
 	@Override
 	public void setOption() {
-		// TODO Auto-generated method stub
 		System.out.println("Enter an item to rank: ");
 		Scanner contInput = new Scanner(System.in);
 		String s = contInput.nextLine();
@@ -30,14 +29,12 @@ public class Ranking extends Question {
 
 	@Override
 	public String getOption() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 
 	@Override
 	public void getAllOptions() {
-		// TODO Auto-generated method stub
 		for(String op: options) {
 			System.out.println("\t" + op);
 		}
