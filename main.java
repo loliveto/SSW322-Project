@@ -245,7 +245,7 @@ public class Driver {
 						Scanner contInput = new Scanner(System.in);
 						contS = contInput.nextLine();
 					}
-					//add it to questionlist  [happens up ^^ there I think-Nicole]
+					
 					System.out.println("\n-----------------------------------------------\n");
 					System.out.println("Here is your test:");
 					
@@ -258,6 +258,7 @@ public class Driver {
 						qs.getAllOptions();
 						qNumS++;
 					}
+					System.out.println("\n");
 					break;
 					
 				case 3:
