@@ -245,15 +245,11 @@ public class Driver {
 						Scanner contInput = new Scanner(System.in);
 						contS = contInput.nextLine();
 					}
-					
-<<<<<<< HEAD
 					//add it to questionlist  [happens up ^^ there I think-Nicole]
 					System.out.println("\n-----------------------------------------------\n");
 					System.out.println("Here is your test:");
 					
-=======
-					//output the survey
->>>>>>> origin/master
+					//output
 					ArrayList<Question> outputS = survey.getQuestionsList();
 					System.out.println(survey.getName());
 					int qNumS = 1;
