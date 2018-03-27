@@ -25,14 +25,10 @@ public class MultipleChoice extends Question{
 		Scanner contInput = new Scanner(System.in);
 		String s = contInput.nextLine();
 		this.options.add(s);
-//		if(isATest == true){
-//			
-//		}
 	}
 
 	@Override
 	public void getAllOptions() {
-		// TODO Auto-generated method stub
 		for(String op: options) {
 			System.out.println("\t" + op);
 		}

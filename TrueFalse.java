@@ -9,20 +9,17 @@ public class TrueFalse extends Question{
 
 	@Override
 	public void setOption() {
-		// TODO Auto-generated method stub
 		options.add("True");
 		options.add("False");
 	}
 
 	@Override
 	public String getOption() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void getAllOptions() {
-		// TODO Auto-generated method stub
 		for(String op: options) {
 			System.out.println("\t" + op);
 		}

@@ -26,12 +26,10 @@ public class OpenEnded extends Question{
 
 	@Override
 	public String getOption() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void getAllOptions() {
-		// TODO Auto-generated method stub
 	}
 }

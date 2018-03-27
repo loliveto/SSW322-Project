@@ -11,27 +11,15 @@ public class Ranking extends Question {
 	
 	String questionPrompt = new String();
 	
-//	public ArrayList<String[]> getOptions(){
-//		return options;
-//	}
-	
-	
 	@Override
 	public void setOption() {
-		// TODO Auto-generated method stub
-		// TODO Auto-generated method stub
-		System.out.println("Enter the first item to rank: ");
+		System.out.println("Enter an item to rank: ");
 		Scanner contInput = new Scanner(System.in);
 		String s = contInput.nextLine();
 		
 		System.out.println("Enter the rank value of that item: ");
 		Scanner contInput2 = new Scanner(System.in);
 		rank = contInput.nextLine();
-		
-//		String[] pair = new String[2];
-//		
-//		pair[0] = s;
-//		pair[1] = rank;
 		
 		String pair = s + "\t" + rank;
 		
@@ -41,14 +29,12 @@ public class Ranking extends Question {
 
 	@Override
 	public String getOption() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 
 	@Override
 	public void getAllOptions() {
-		// TODO Auto-generated method stub
 		for(String op: options) {
 			System.out.println("\t" + op);
 		}
