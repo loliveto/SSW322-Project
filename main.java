@@ -5,25 +5,26 @@ import java.util.Scanner;
 
 public class Driver {
 	public static void main(String[] args){
+		
 		int menuChoice = -1;
 		ArrayList<Questionaire> questionnaireList = new ArrayList<Questionaire>();
-		//ArrayList<AnswerSheet> answerSheetList = new ArrayList<AnswerSheet>();
 		
 		System.out.println("The Questionnaire CLAN Presents: \n");
 		System.out.println("Creat a Test or Survey! \n");
+		
+		//while loop for entire program
 		while(true){
 			System.out.println("Press 1 to Create a Test\nPress 2 to Create a Survey\nPress 3 to Take a Test\nPress 4 to View Your Tests/Surveys\nPress 0 to quit");
 			
 			Scanner choiceInput = new Scanner(System.in);
 			menuChoice = Integer.parseInt(choiceInput.nextLine());
 			
+			//while loop to iterate through the choices
 			switch(menuChoice){
 				case 1:
 					//code to create test
 					Questionaire test = new Questionaire();
 					questionnaireList.add(test);
-					//AnswerSheet answerSheet = new AnswerSheet(1);
-					//answerSheetList.add(answerSheet);
 					
 					//name test
 					System.out.println("What would you like to name your test?");
@@ -134,6 +135,7 @@ public class Driver {
 								}
 								break;
 						}
+						
 						//adds question to questionlist
 						test.addQuestion(q);
 						
@@ -143,24 +145,21 @@ public class Driver {
 					}
 					
 					ArrayList<Question> output = test.getQuestionsList();
-					
+					//print our the test
 					System.out.println(test.getName());
 					int qNum = 1;
 					ArrayList<String> as = test.getAnswerSheet().getCorrectAnswers();
 					for(Question qs: output) {
 						System.out.println(qNum + ") " + qs.getPrompt());
-						//ArrayList<String> opts= qs.getAllOptions();
 						qs.getAllOptions();
 						System.out.println("Correct Answer: " + as.get(qNum-1));
 						qNum++;
 						
 					}
-					//add it to questionlist
 					break;
 					
 				case 2:
 					//code to create Survey
-					//break;
 					Questionaire survey = new Questionaire();
 					questionnaireList.add(survey);
 					
@@ -247,13 +246,12 @@ public class Driver {
 						contS = contInput.nextLine();
 					}
 					
-					//add it to questionlist  [happens up ^^ there I think-Nicole]
+					//output the survey
 					ArrayList<Question> outputS = survey.getQuestionsList();
 					System.out.println(survey.getName());
 					int qNumS = 1;
 					for(Question qs: outputS) {
 						System.out.println(qNumS + ") " + qs.getPrompt());
-						//ArrayList<String> opts= qs.getAllOptions();
 						qs.getAllOptions();
 						qNumS++;
 					}
@@ -268,10 +266,11 @@ public class Driver {
 					break;
 					
 				default:
+					System.exit(1);
 					break;
+					
 				//end of switch
 			}
-			//print out the test/survey
 			
 			//end of while
 		}		
