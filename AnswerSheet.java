@@ -7,18 +7,17 @@ public class AnswerSheet {
 
 	public ArrayList<String> correctAnswers = new ArrayList<String>();
 	public HashMap<Integer, ArrayList<String>> userAnswers = new  HashMap<Integer, ArrayList<String>>();
-	//public Questionaire questionaire = new Questionaire();
 	public int id;
 	
-	public AnswerSheet() {
-		//this.questionaire = questionaire;
-		//this.id = id;
+	public AnswerSheet() {;
 	}
 	
+	//add correct answers for the test
 	public void addCorrectAnswer(String answer) {
 		correctAnswers.add(answer);
 	}
 	
+	//add user users for the questionaire
 	public void addUserAnswer(Integer uId, String answer) {
 		ArrayList<String> ans = new ArrayList<String>();
 		if(userAnswers.containsKey(id)) {
@@ -33,8 +32,7 @@ public class AnswerSheet {
 	
 	public void checkAnswers(Integer id) {
 		ArrayList<String> uAns = userAnswers.get(id);
-		
-		//finish!!!
+		//not done
 		
 	}
 	
