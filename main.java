@@ -144,6 +144,9 @@ public class Driver {
 						cont = contInput.nextLine();
 					}
 					
+					System.out.println("\n-----------------------------------------------\n");
+					System.out.println("Here is your test:");
+					
 					ArrayList<Question> output = test.getQuestionsList();
 					//print our the test
 					System.out.println(test.getName());
@@ -247,7 +250,7 @@ public class Driver {
 					}
 					
 					System.out.println("\n-----------------------------------------------\n");
-					System.out.println("Here is your test:");
+					System.out.println("Here is your survey:");
 					
 					//output
 					ArrayList<Question> outputS = survey.getQuestionsList();
